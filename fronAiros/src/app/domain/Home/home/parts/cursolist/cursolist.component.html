@@ -1,0 +1,10 @@
+<div class=" grid grid-cols-2 p-6">
+  <h2 class="dark:text-black font-bold text-2xl"> Nuevos Cursos {{items.length}}</h2>
+  <app-buscador></app-buscador>
+</div>
+<div class="grid grid-cols-2 gap-12 md:grid-cols-3  p-6 ">
+
+  @for (cs of cursos ; track cs.title){
+    <app-curso (addItemsToCart)="additemtoCart($event)"  title="{{cs.title}}" description="{{cs.description.slice(0,120)}}" image="{{cs.image}}"></app-curso>
+  }
+</div>

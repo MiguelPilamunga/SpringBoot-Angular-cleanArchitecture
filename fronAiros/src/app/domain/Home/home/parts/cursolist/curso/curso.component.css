@@ -1,0 +1,8 @@
+.max-w-sm:hover {
+  background-image: linear-gradient(to top left, #000000, #141a83);
+}
+
+.max-w-sm:hover .inline-flex {
+  background-color: #007bff;
+  color: #fff;
+}
